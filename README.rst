@@ -75,7 +75,7 @@ Client example
         method = client['args']
         print(await method(1, 2, 3))
 
-        client.close()
+        await client.close()
 
     if __name__ == "__main__":
         loop.run_until_complete(main())
